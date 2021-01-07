@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
-var port = process.env.PORT || 8080; 
 
 app.get('/', function(req, res) {
     res.render('index.ejs');
@@ -24,7 +23,7 @@ io.sockets.on('connection', function(socket) {
 
 });
 
-const server = http.listen(port, function() {
+const server = http.listen(8080, function() {
     console.log('listening on *:8080');
 });
 
