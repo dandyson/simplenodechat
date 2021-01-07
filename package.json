@@ -1,0 +1,24 @@
+{
+  "name": "group-chat",
+  "version": "1.0.0",
+  "description": "Dan's first chat app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan Dyson",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "socket.io": "^3.0.4"
+  },
+  "engines": {
+    "node": "15.x"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ]
+}
